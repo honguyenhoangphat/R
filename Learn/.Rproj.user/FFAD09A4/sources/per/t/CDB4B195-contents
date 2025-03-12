@@ -1,0 +1,49 @@
+# VECTOR
+# MATRIX
+# LIST
+# DATA FRAME
+
+# VECTOR
+# Là một dãy dữ liệu cùng kiểu (cùng class)
+# # là cấu trúc dữ liệu cơ bản trong R
+# mỗi biến đơn lẻ trong R thực chất chính là một vecto 
+# 
+# 
+# vecto 
+# Matrix
+# List
+# Data frame
+# 
+# 
+# Phương thức tạo vecto
+# lệnh cơ bản để tạo vecto là c() ( combine - kết hợp    nhiều riêng rẻ thành vecto)
+# ngoài ra có các hàm hữ ích khác như:
+#   
+#   rep() (replicate - sao chép)
+#   seq() ( requence - tạo dãy số)
+# 
+#   kiểu dữ liệu của vecto chính là kiểu dữ liệu của các phần tử trong nó
+
+
+# sử dụng c()
+v1 <- c(1,2,3,4,5)
+v2 <- c("A", "B", "C", "D", "E" )
+class(v2)  
+vmix <- c(1, "A", 2, "B", 3, "C")
+class(vmix)
+# # lưu ý:
+# vecto luôn chứa các phần tử cừng kiểu
+# nếu trộn các kiểu R sẽ chuyển đổi tất cả về cùng
+# thường là chuyển về kiểu dữ liệu "mạnh" nhất:
+#   logical < integer < numeric < character 
+
+
+# sử dụng : để tự động tạp 
+v3 <- c(1:10)
+v3
+class(v3)
+
+v4 <- c(1.5:3.5)
+v4
+
+v5 <- c(1.5:3.5)
